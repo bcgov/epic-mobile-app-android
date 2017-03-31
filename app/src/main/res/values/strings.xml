@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">EAOMvp</string>
+
+    <string name="in_progress">In Progress</string>
+    <string name="uploaded">Uploaded</string>
+    <string name="add_inspection">Add Inspection</string>
+    <string name="title">Title</string>
+    <string name="project">Project</string>
+    <string name="create">Create</string>
+    <string name="end_date">End date</string>
+    <string name="start_date">Start date</string>
+    <string name="number">Number</string>
+    <string name="sub_text">Sub text</string>
+    <string name="search">Search…</string>
+
+</resources>

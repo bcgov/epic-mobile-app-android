@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.airsenze.eaomvp.add_inspection.AddInspectionActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:background="@color/light_gray">
+
+    <com.airsenze.eaomvp.ui.toolbar.Toolbar
+        android:id="@+id/add_inspection_toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/add_inspection_project_tv"
+                android:text="@string/project"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/add_inspection_title_til"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/TextInputStyle"
+                app:layout_constraintTop_toBottomOf="@+id/add_inspection_project_tv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/add_inspection_title_et"
+                    android:hint="@string/title"
+                    android:textSize="16sp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:maxLength="50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/add_inspection_sub_text_til"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/TextInputStyle"
+                app:layout_constraintTop_toBottomOf="@+id/add_inspection_title_til"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/add_inspection_sub_text_et"
+                    android:hint="@string/sub_text"
+                    android:textSize="16sp"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:maxLength="50"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/add_inspection_number_til"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/TextInputStyle"
+                app:layout_constraintTop_toBottomOf="@+id/add_inspection_sub_text_til"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/add_inspection_number_et"
+                    android:hint="@string/number"
+                    android:textSize="16sp"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:maxLength="25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/add_inspection_start_date_tv"
+                android:text="@string/start_date"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/add_inspection_number_til"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/add_inspection_end_date_tv"
+                android:text="@string/end_date"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toBottomOf="@+id/add_inspection_start_date_tv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/add_inspection_create_tv"
+                android:text="@string/create"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/add_inspection_end_date_tv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</LinearLayout>
